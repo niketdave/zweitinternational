@@ -4347,7 +4347,7 @@ grid-gap:20px;	  } }
 .w3l-services-two {
   /*-- features4 --*/ }
   .w3l-services-two .service-single-page {
-    padding: 0px 0 70px; }
+    padding: 0px 0 0px; }
   .w3l-services-two .service-info a h4 {
     font-size: 22px;
     font-weight: 700;
