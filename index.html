@@ -327,6 +327,9 @@ We ensure our quality and integrity of our products through constant monitoring.
                     </div>
         </div>
 </section>
+<div style="position: relative;
+    float: right;" id="google_translate_element"></div>
+
 <section class="w3l-footer-29-main">
   <div class="footer-29 py-5">
     <div class="container">
@@ -390,43 +393,20 @@ We ensure our quality and integrity of our products through constant monitoring.
 <button onclick="topFunction()" id="movetop" title="Go to top">
 	<span class="fa fa-long-arrow-up"></span>
 </button>
-<a href="http://free-website-translation.com/" id="ftwtranslation_button" hreflang="en" title="" style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image" alt="FWT Homepage Translator" style="border:0;"/></a> <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" /></script>
 <script>
-	// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function () {
-		scrollFunction()
-	};
 
-	function scrollFunction() {
-		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-			document.getElementById("movetop").style.display = "block";
-		} else {
-			document.getElementById("movetop").style.display = "none";
-		}
-	}
+function googleTranslateElementInit() {
 
-	// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;
-	}
+new google.translate.TranslateElement({
 
-  function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+pageLanguage: 'en'
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
+}, 'google_translate_element');
+
 }
+
 </script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <!-- /move top -->
 </body>
 
